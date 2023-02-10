@@ -58,7 +58,7 @@ const ToDo = ({task, setTaskList, taskList, index}) => {
     return (
         <>
             <div className='flex flex-col items-start justify-start
-            bg-white my-4 ml-6 py-4 px-6 w-3/4 max-w-lg rounded-md shadow-md' ref={drag}>
+            bg-white my-4 py-4 px-6 w-3/4 max-w-lg rounded-md shadow-md' ref={drag}>
                 <div className='flex flex-row justify-between w-full items-center'>
                     <p className='font-semibold text-xl'>{task.projectName}</p>
                     <EditTask task={task} setTaskList={setTaskList} taskList={taskList} index={index}/>

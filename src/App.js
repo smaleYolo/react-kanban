@@ -38,7 +38,6 @@ function App() {
     }
 
     useEffect(() => {
-        console.log('useEffect')
         localStorage.setItem('taskList', JSON.stringify(taskList))
         localStorage.setItem('completedList', JSON.stringify(completed))
     }, [taskList, completed])
@@ -51,7 +50,7 @@ function App() {
                 <AddTask taskList={taskList} setTaskList={setTaskList}/>
                 <p className='text-xl'>to add a new task!</p>
             </div>
-           <div className='flex flex-row mx-3'>
+           <div className='flex mx-10'>
                <div className='w-full'>
                    <h2 className='rounded-md text-xl font-semibold w-3/4 max-w-lg py-2 my-6 px-2 bg-gray-300'>To Do:</h2>
                    {taskList.map((task,i) => (
